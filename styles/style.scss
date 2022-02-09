@@ -1,0 +1,54 @@
+// variables
+$white: #fff;
+$black: #000101;
+body {
+    padding: 0;
+    margin: 0;
+}
+
+//functions
+@mixin flex-center {
+    display: flex;
+    justtify-content: center;
+}
+
+@mixin circle-btn {}
+
+.container {
+    @include flex-center();
+}
+
+.side-bar {
+    position: relative;
+    z-index: 10;
+    background-color: $black;
+    height: 100vh;
+    width: 283px;
+}
+
+.contents {
+    @include flex-center();
+    background: rgb(32, 58, 67);
+    background: linear-gradient(77deg, rgb(8, 29, 56) 0%, rgba(18, 19, 19, 1) 100%);
+    width: 100%;
+    .nav-div {
+        height: 50px;
+        width: 80vw;
+        margin: 10px auto;
+        border: 1px solid $white;
+        @include flex-center();
+    }
+    .nav-btn {
+        height: 30px;
+        width: 30px;
+        margin: auto 0;
+        margin-left: 15px;
+        border-radius: 100%;
+        background-color: $black;
+        @include flex-center();
+        align-items: center;
+        p {
+            color: $white;
+        }
+    }
+}

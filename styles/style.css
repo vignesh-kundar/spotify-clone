@@ -1,0 +1,61 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justtify-content: center;
+}
+
+.side-bar {
+  position: relative;
+  z-index: 10;
+  background-color: #000101;
+  height: 100vh;
+  width: 283px;
+}
+
+.contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justtify-content: center;
+  background: #203a43;
+  background: linear-gradient(77deg, #081d38 0%, #121313 100%);
+  width: 100%;
+}
+
+.contents .nav-div {
+  height: 50px;
+  width: 80vw;
+  margin: 10px auto;
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justtify-content: center;
+}
+
+.contents .nav-btn {
+  height: 30px;
+  width: 30px;
+  margin: auto 0;
+  margin-left: 15px;
+  border-radius: 100%;
+  background-color: #000101;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justtify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contents .nav-btn p {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
