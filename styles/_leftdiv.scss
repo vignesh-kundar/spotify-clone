@@ -5,7 +5,9 @@
     background-color: $black;
     height: 100vh;
     width: 285px;
+    position: sticky;
     display: flex;
+    top: 0;
     //LOGO container
     .logo-container {
         height: 40px;
