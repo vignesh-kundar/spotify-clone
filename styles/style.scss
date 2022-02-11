@@ -7,10 +7,6 @@ body {
 }
 
 //functions
-@mixin flex-center {
-    display: flex;
-}
-
 @mixin chevrons {
     border-style: solid;
     border-width: 0.09em 0.09em 0 0;
@@ -27,7 +23,7 @@ body {
 
 //Main Container
 .container {
-    @include flex-center();
+    display: flex;
 }
 
 @import 'leftdiv';
