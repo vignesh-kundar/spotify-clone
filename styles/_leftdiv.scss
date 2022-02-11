@@ -1,0 +1,31 @@
+//left side container
+.side-bar {
+    // position: relative;
+    // z-index: 1;
+    background-color: $black;
+    height: 100vh;
+    width: 285px;
+    @include flex-center();
+    //LOGO container
+    .logo-container {
+        height: 40px;
+        width: fit-content;
+        margin: 27px;
+        @include flex-center();
+        align-items: center;
+        cursor: pointer;
+        img {
+            height: 42px;
+            width: 42px;
+            fill: $white;
+            color: $white;
+        }
+        h3 {
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 23px;
+            margin: 7px;
+            padding: 0;
+        }
+    }
+}

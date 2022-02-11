@@ -13,7 +13,7 @@ body {
 
 @mixin chevrons {
     border-style: solid;
-    border-width: 0.08em 0.08em 0 0;
+    border-width: 0.09em 0.09em 0 0;
     content: '';
     display: inline-block;
     height: 0.60em;
@@ -30,71 +30,5 @@ body {
     @include flex-center();
 }
 
-//left side container
-.side-bar {
-    // position: relative;
-    // z-index: 1;
-    background-color: $black;
-    height: 100vh;
-    width: 285px;
-    @include flex-center();
-    //LOGO container
-    .logo-container {
-        height: 40px;
-        width: fit-content;
-        margin: 27px;
-        @include flex-center();
-        align-items: center;
-        cursor: pointer;
-        img {
-            height: 42px;
-            width: 42px;
-            fill: $white;
-            color: $white;
-        }
-        h3 {
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            font-size: 23px;
-            margin: 7px;
-            padding: 0;
-        }
-    }
-}
-
-//Right side container
-.contents {
-    @include flex-center();
-    background: rgb(32, 18, 90);
-    background: linear-gradient(183deg, rgba(32, 18, 90, 1) 0%, rgba(31, 19, 81, 1) 44%, rgba(18, 19, 19, 1) 100%);
-    width: 100%;
-    .nav-div {
-        height: 50px;
-        width: 82vw;
-        margin: 10px auto;
-        // border: 1px solid $white;
-        @include flex-center();
-        .nav-btn-div {
-            height: 30px;
-            width: 30px;
-            margin: auto 0;
-            margin-left: 17px;
-            border-radius: 100%;
-            background-color: #130A33;
-            @include flex-center();
-            justify-content: space-around;
-            align-items: center;
-            cursor: no-drop;
-            .prev::before {
-                @include chevrons();
-                left: 0.25em;
-                transform: rotate(-135deg);
-            }
-            .next::before {
-                @include chevrons();
-                left: 0;
-                transform: rotate(45deg);
-            }
-        }
-    }
-}
+@import 'leftdiv';
+@import 'contents';

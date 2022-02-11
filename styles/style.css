@@ -57,16 +57,17 @@ body {
   width: 100%;
 }
 
-.contents .nav-div {
+.contents .nav-chev-div {
   height: 50px;
-  width: 82vw;
+  width: 80vw;
   margin: 10px auto;
+  margin-left: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contents .nav-div .nav-btn-div {
+.contents .nav-chev-div .nav-btn-div {
   height: 30px;
   width: 30px;
   margin: auto 0;
@@ -84,9 +85,9 @@ body {
   cursor: no-drop;
 }
 
-.contents .nav-div .nav-btn-div .prev::before {
+.contents .nav-chev-div .nav-btn-div .prev::before {
   border-style: solid;
-  border-width: 0.08em 0.08em 0 0;
+  border-width: 0.09em 0.09em 0 0;
   content: '';
   display: inline-block;
   height: 0.60em;
@@ -101,9 +102,9 @@ body {
           transform: rotate(-135deg);
 }
 
-.contents .nav-div .nav-btn-div .next::before {
+.contents .nav-chev-div .nav-btn-div .next::before {
   border-style: solid;
-  border-width: 0.08em 0.08em 0 0;
+  border-width: 0.09em 0.09em 0 0;
   content: '';
   display: inline-block;
   height: 0.60em;
@@ -113,7 +114,7 @@ body {
   width: 0.60em;
   color: #fff;
   opacity: 0.7;
-  left: 0;
+  left: -0.17em;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
