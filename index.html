@@ -42,8 +42,9 @@
                 </div>
             </div>
         </div>
-
         <!-- side black box -->
+
+
         <div class=contents ">
             
             <div class="contents-nav-div ">
@@ -78,19 +79,38 @@
                     </div>
                 </div>
                 
-            </div>
-            <!-- end of nav bar -->
+            </div>   <!-- end of nav bar -->
+          
 
             <div class="hero-content ">
                 <div class="greet ">
-                    <span>Good morning</span>
+                    <span id="greeting "></span>
+                   
                 </div>
                    
             </div>
 
            
         </div>
-    </div>
+    </div>   <!-- main container -->
+
+
+    <!-- script -->
+   <script>
+       var greet
+
+var mydate = new Date();
+var hours = mydate.getHours();
+
+if (hours < 12)
+    greet = 'Good morning';
+else if (hours >= 12 && hours <= 17)
+    greet = 'Good afternoon';
+else if (hours >= 17 && hours <= 24)
+    greet = 'Good evening';
+
+document.getElementById("greeting ").innerHTML = greet;
+   </script>
 
 </body>
 
