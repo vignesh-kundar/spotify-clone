@@ -96,7 +96,7 @@
                 }
                 p {
                     color: $white;
-                    font-size: 1.5em;
+                    font-size: 1.25em;
                     margin: 2.5px 3px;
                 }
             }
@@ -108,11 +108,13 @@
         width: 80vw;
         // background-color: #525352;
         margin: 20px auto;
-        span {
-            color: $white;
-            font-family: Poppins;
-            font-size: 2em;
-            margin: 10px 0;
+        .greet {
+            span {
+                color: $white;
+                font-family: Poppins;
+                font-size: 32px;
+                margin: 10px 0;
+            }
         }
     } //hero-content
 } //main contents div

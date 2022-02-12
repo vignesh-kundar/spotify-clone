@@ -15,9 +15,6 @@ body {
   width: 285px;
   position: -webkit-sticky;
   position: sticky;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   top: 0;
 }
 
@@ -49,6 +46,48 @@ body {
   font-size: 23px;
   margin: 7px;
   padding: 0;
+}
+
+.side-bar .side-links {
+  color: #c4c4c4;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 5px;
+  margin-left: 27px;
+}
+
+.side-bar .side-links div {
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.side-bar .side-links div span {
+  font-size: 14px;
+}
+
+.side-bar .side-links div span:hover {
+  color: #fff;
+}
+
+.side-bar .side-links img {
+  width: 20px;
+  height: auto;
+  margin: 5px;
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.side-bar .side-links .home {
+  color: #fff;
+}
+
+.side-bar .side-links .library img {
+  height: 18px;
 }
 
 .contents {
@@ -223,7 +262,7 @@ body {
 
 .contents .contents-nav-div .nav-btn-container .user-div p {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin: 2.5px 3px;
 }
 
@@ -235,10 +274,10 @@ body {
   margin: 20px auto;
 }
 
-.contents .hero-content span {
+.contents .hero-content .greet span {
   color: #fff;
   font-family: Poppins;
-  font-size: 2em;
+  font-size: 32px;
   margin: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */
