@@ -47,7 +47,9 @@
                 color: $white;
             }
         }
-        img {
+        img,
+        .ls-img,
+        .cp-img {
             width: 20px;
             height: auto;
             margin: 5px;
@@ -62,5 +64,32 @@
                 height: 18px;
             }
         }
-    }
+        .cp-and-ls {
+            margin-top: 10px;
+            display: inline-block;
+            .cp-img,
+            .ls-img {
+                display: flex;
+                align-items: center;
+                margin-top: 0 !important;
+                justify-content: center;
+                height: 22px;
+                width: 22px;
+                border-radius: 1px;
+                background-color: #c4c4c4;
+                b {
+                    color: $black;
+                    font-family: Poppins;
+                    font-size: 1em;
+                }
+            }
+            .ls-img {
+                background: rgb(57, 0, 219);
+                background: linear-gradient(131deg, rgba(57, 0, 219, 1) 0%, rgba(111, 82, 241, 1) 47%, rgba(196, 196, 196, 1) 89%);
+                b {
+                    font-size: 0.6em;
+                }
+            }
+        }
+    } // end of side links
 } //end of side-bar
