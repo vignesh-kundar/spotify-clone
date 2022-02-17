@@ -1,0 +1,40 @@
+.footer {
+    height: 90px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background-color: #181818;
+    border-top: 0.1px solid rgba(128, 128, 128, 0.381);
+    display: flex;
+    align-items: center;
+    .image-and-name {
+        display: flex;
+        .ftr-image {
+            height: 56px;
+            width: 56px;
+            background-color: #c4c4c4;
+            border-radius: 1px;
+            margin-left: 20px;
+        }
+        .song-name {
+            margin: auto 0;
+            span,
+            p {
+                color: $white;
+                font-family: Poppins;
+                font-size: 14px;
+                margin: 0;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+            p {
+                font-size: 10px;
+                color: grey;
+            }
+            span:hover,
+            p:hover {
+                text-decoration: underline;
+            }
+        }
+    } //image-and-name-end
+} //footer-end

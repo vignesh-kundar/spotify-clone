@@ -321,4 +321,57 @@ body {
   font-size: 32px;
   margin: 10px 0;
 }
+
+.footer {
+  height: 90px;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  background-color: #181818;
+  border-top: 0.1px solid rgba(128, 128, 128, 0.381);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .image-and-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .image-and-name .ftr-image {
+  height: 56px;
+  width: 56px;
+  background-color: #c4c4c4;
+  border-radius: 1px;
+  margin-left: 20px;
+}
+
+.footer .image-and-name .song-name {
+  margin: auto 0;
+}
+
+.footer .image-and-name .song-name span,
+.footer .image-and-name .song-name p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  margin: 0;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.footer .image-and-name .song-name p {
+  font-size: 10px;
+  color: grey;
+}
+
+.footer .image-and-name .song-name span:hover,
+.footer .image-and-name .song-name p:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=style.css.map */
