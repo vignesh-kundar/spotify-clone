@@ -7,6 +7,7 @@
     border-top: 0.1px solid rgba(128, 128, 128, 0.381);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     .image-and-name {
         display: flex;
         .ftr-image {
@@ -37,4 +38,23 @@
             }
         }
     } //image-and-name-end
+    .sound-and-features {
+        height: 55px;
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        // background-color: blue;
+        margin-right: 20px;
+        .sound-control-ftr {
+            height: 4px;
+            width: 100px;
+            border-radius: 2px;
+            background-color: gray;
+            cursor: pointer;
+        }
+        .sound-control-ftr:hover {
+            background-color: #1FD660;
+        }
+    }
 } //footer-end

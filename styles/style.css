@@ -335,6 +335,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer .image-and-name {
@@ -373,5 +376,32 @@ body {
 .footer .image-and-name .song-name span:hover,
 .footer .image-and-name .song-name p:hover {
   text-decoration: underline;
+}
+
+.footer .sound-and-features {
+  height: 55px;
+  width: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.footer .sound-and-features .sound-control-ftr {
+  height: 4px;
+  width: 100px;
+  border-radius: 2px;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.footer .sound-and-features .sound-control-ftr:hover {
+  background-color: #1FD660;
 }
 /*# sourceMappingURL=style.css.map */
