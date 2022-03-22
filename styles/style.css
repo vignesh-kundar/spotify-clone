@@ -324,7 +324,7 @@ body {
   margin: 10px 0;
 }
 
-.contents .hero-content .six-div {
+.contents .hero-content .six-div-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(300px, 2fr))[auto-fit];
@@ -335,7 +335,7 @@ body {
   margin: 16px 5px;
 }
 
-.contents .hero-content .six-div div {
+.contents .hero-content .six-div-container .six-div {
   height: 80px;
   background-color: #c4c4c41a;
   border-radius: 5px;
@@ -347,23 +347,66 @@ body {
           align-items: center;
 }
 
-.contents .hero-content .six-div div .six-img {
+.contents .hero-content .six-div-container .six-div .six-img {
   height: 100%;
   width: calc(100% - 80%);
   background-color: coral;
   opacity: 1 !important;
+  border-radius: 5px 0 0 5px;
+  -webkit-box-shadow: 1px 0px 20px #17171784;
+          box-shadow: 1px 0px 20px #17171784;
 }
 
-.contents .hero-content .six-div div .six-playlist-title {
+.contents .hero-content .six-div-container .six-div .six-playlist-title {
   background-color: transparent;
 }
 
-.contents .hero-content .six-div div .six-playlist-title p {
+.contents .hero-content .six-div-container .six-div .six-playlist-title p {
   font-family: poppins;
   letter-spacing: 1px;
   font-weight: bold !important;
   margin: 10px;
   color: #fff;
+}
+
+.contents .hero-content .six-div-container .six-div .six-div-btn {
+  height: 47px;
+  width: 47px;
+  border-radius: 100%;
+  background-color: #09FE14;
+  position: relative;
+  left: 50%;
+  border: 0.1px solid #17171736;
+  -webkit-box-shadow: 0 6px 8px #171717b8;
+          box-shadow: 0 6px 8px #171717b8;
+  display: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.contents .hero-content .six-div-container .six-div .six-div-btn:hover {
+  height: 49px;
+  width: 49px;
+}
+
+.contents .hero-content .six-div:hover {
+  background-color: #c4c4c444;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.contents .hero-content .six-div:hover {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.contents .hero-content .six-div:hover .six-div-btn {
+  display: block;
 }
 
 .contents .list-title {
@@ -435,10 +478,6 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
-}
-
-.six-div div::hover {
-  background-color: #c4c4c45f;
 }
 
 .footer {
