@@ -106,7 +106,6 @@
         display: grid;
         height: fit-content;
         width: 80vw;
-        // background-color: #525352;
         margin: 20px auto;
         .greet {
             span {
@@ -133,7 +132,7 @@
                 .six-img {
                     height: 100%;
                     width: calc(100% - 80%);
-                    background-color: coral;
+                    background-color: #c4c4c4c4;
                     opacity: 1 !important;
                     border-radius: 5px 0 0 5px;
                     box-shadow: 1px 0px 20px #17171784;
@@ -152,13 +151,20 @@
                     height: 47px;
                     width: 47px;
                     border-radius: 100%;
-                    background-color: #09FE14;
+                    background-color: #09fe15cf;
                     position: relative;
                     left: 50%;
                     border: 0.1px solid #17171736;
                     box-shadow: 0 6px 8px #171717b8;
                     display: none;
                     transition: all 1s;
+                    img {
+                        position: relative;
+                        height: 20px;
+                        width: auto;
+                        left: 18px;
+                        top: 13px;
+                    }
                 }
                 .six-div-btn:hover {
                     height: 49px;
@@ -181,57 +187,65 @@
         }
     } //hero-content
     //list of contents :)
-    .list-title {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0 30px;
-        padding-bottom: 0;
-        p {
-            font-family: poppins;
-            color: #fff;
-            font-size: 22px;
-            letter-spacing: -1px;
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
-            color: rgb(162, 162, 162);
-            font-family: Poppins;
-            font-size: 14px;
-        }
-    }
-    .content-list {
-        display: flex;
-        margin: 20px 30px;
-        .list-content-data {
-            height: 260px;
-            width: 180px;
-            background-color: #c4c4c411;
-            margin: 10px;
-            border-radius: 5px;
-            display: grid;
-            justify-content: center;
-            .list-img {
-                height: 150px;
-                width: 150px;
-                background-color: #c4c4c4;
-                margin-top: 15px;
-                border-radius: 5px;
+    .content-list-container-1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, auto);
+        .list-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 30px;
+            padding-bottom: 0;
+            p {
+                font-family: poppins;
+                color: #fff;
+                font-size: 22px;
+                letter-spacing: -1px;
+                margin: 0;
             }
-            .list-data-text {
-                h3 {
-                    margin: 0;
-                    color: #fff;
-                    font-size: 16px;
-                    font-family: Poppins;
+            a {
+                text-decoration: none;
+                color: rgb(162, 162, 162);
+                font-family: Poppins;
+                font-size: 14px;
+            }
+        }
+        .content-list {
+            display: flex;
+            margin: 20px 30px;
+            .list-content-data {
+                height: 260px;
+                width: 180px;
+                background-color: #c4c4c411;
+                margin: 10px;
+                border-radius: 5px;
+                display: grid;
+                justify-content: center;
+                .list-img {
+                    height: 150px;
+                    width: 150px;
+                    background-color: #c4c4c4;
+                    margin-top: 15px;
+                    border-radius: 5px;
                 }
-                p {
-                    color: rgb(162, 162, 162);
-                    font-family: 'Poppins', sans-serif;
-                    font-size: 12px;
-                    letter-spacing: 1px;
+                .list-data-text {
+                    h3 {
+                        margin: 0;
+                        color: #fff;
+                        font-size: 16px;
+                        font-family: Poppins;
+                    }
+                    p {
+                        color: rgb(162, 162, 162);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                    }
                 }
+            }
+            .list-content-data:hover {
+                background-color: #c4c4c450;
+                transition: all .5s;
             }
         }
     }
