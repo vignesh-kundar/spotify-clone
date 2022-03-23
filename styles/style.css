@@ -1,6 +1,26 @@
 body {
   padding: 0;
   margin: 0;
+  overflow: overlay;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 13px;
+  margin: 5px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #cacaca50;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #cacacac4;
 }
 
 .container {
@@ -373,7 +393,7 @@ body {
   height: 47px;
   width: 47px;
   border-radius: 100%;
-  background-color: #09fe15cf;
+  background-color: #1DB855;
   position: relative;
   left: 50%;
   border: 0.1px solid #17171736;
@@ -461,6 +481,7 @@ body {
 }
 
 .contents .content-list-container-1 .content-list .list-content-data {
+  position: relative;
   height: 260px;
   width: 180px;
   background-color: #c4c4c411;
@@ -495,10 +516,49 @@ body {
   letter-spacing: 1px;
 }
 
+.contents .content-list-container-1 .content-list .list-content-data .list-div-btn {
+  height: 47px;
+  width: 47px;
+  position: absolute;
+  z-index: 99;
+  background-color: #1DB855;
+  border: 0.1px solid #17171736;
+  -webkit-box-shadow: 0 6px 8px #171717b8;
+          box-shadow: 0 6px 8px #171717b8;
+  border-radius: 100%;
+  bottom: 80px;
+  right: 25px;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+  opacity: 0;
+}
+
+.contents .content-list-container-1 .content-list .list-content-data .list-div-btn img {
+  position: relative;
+  height: 20px;
+  width: auto;
+  left: 18px;
+  top: 13px;
+}
+
+.contents .content-list-container-1 .content-list .list-content-data .list-div-btn:hover {
+  height: 48px;
+  width: 48px;
+}
+
 .contents .content-list-container-1 .content-list .list-content-data:hover {
   background-color: #c4c4c450;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.contents .content-list-container-1 .content-list .list-content-data:hover .list-div-btn {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  opacity: 1;
 }
 
 .footer {
@@ -506,6 +566,7 @@ body {
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 99;
   bottom: 0;
   background-color: #181818;
   border-top: 0.1px solid rgba(128, 128, 128, 0.381);
