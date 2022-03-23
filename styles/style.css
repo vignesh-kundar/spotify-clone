@@ -272,6 +272,11 @@ body::-webkit-scrollbar-thumb:hover {
   margin: 0 20px;
 }
 
+.contents .contents-nav-div .nav-btn-container .upgrade-div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .contents .contents-nav-div .nav-btn-container .user-div {
   height: 33px;
   width: -webkit-fit-content;
@@ -393,7 +398,7 @@ body::-webkit-scrollbar-thumb:hover {
   height: 47px;
   width: 47px;
   border-radius: 100%;
-  background-color: #1DB855;
+  background-color: #1FD660;
   position: relative;
   left: 50%;
   border: 0.1px solid #17171736;
@@ -521,7 +526,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 47px;
   position: absolute;
   z-index: 99;
-  background-color: #1DB855;
+  background-color: #1FD660;
   border: 0.1px solid #17171736;
   -webkit-box-shadow: 0 6px 8px #171717b8;
           box-shadow: 0 6px 8px #171717b8;
