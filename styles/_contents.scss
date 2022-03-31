@@ -231,6 +231,11 @@
                     background-color: #c4c4c4;
                     margin-top: 15px;
                     border-radius: 5px;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 5px;
+                    }
                 }
                 .list-data-text {
                     h3 {
@@ -256,7 +261,7 @@
                     border: 0.1px solid #17171736;
                     box-shadow: 0 6px 8px #171717b8;
                     border-radius: 100%;
-                    bottom: 80px;
+                    bottom: 90px;
                     right: 25px;
                     transition: transform 250ms;
                     opacity: 0;
@@ -278,7 +283,7 @@
                 transition: all 1s;
                 cursor: pointer;
                 .list-div-btn {
-                    transform: translateY(-25px);
+                    transform: translateY(-15px);
                     opacity: 1;
                 }
             }

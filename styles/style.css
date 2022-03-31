@@ -507,6 +507,12 @@ body::-webkit-scrollbar-thumb:hover {
   border-radius: 5px;
 }
 
+.contents .content-list-container-1 .content-list .list-content-data .list-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
 .contents .content-list-container-1 .content-list .list-content-data .list-data-text h3 {
   margin: 0;
   color: #fff;
@@ -531,7 +537,7 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-box-shadow: 0 6px 8px #171717b8;
           box-shadow: 0 6px 8px #171717b8;
   border-radius: 100%;
-  bottom: 80px;
+  bottom: 90px;
   right: 25px;
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
@@ -561,8 +567,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .contents .content-list-container-1 .content-list .list-content-data:hover .list-div-btn {
-  -webkit-transform: translateY(-25px);
-          transform: translateY(-25px);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
   opacity: 1;
 }
 
@@ -624,6 +630,41 @@ body::-webkit-scrollbar-thumb:hover {
   text-decoration: underline;
 }
 
+.footer .play-back-track-container {
+  text-align: center !important;
+}
+
+.footer .play-back-track-container .play-back-track::before {
+  content: "12.5";
+  color: #c4c4c493;
+  margin: 2px;
+  position: relative;
+  right: 250px;
+  bottom: 8px;
+  font-size: 13px;
+  font-family: Poppins;
+  font-weight: normal;
+}
+
+.footer .play-back-track-container .play-back-track::after {
+  content: "12.5";
+  color: #c4c4c493;
+  margin: 2px;
+  position: relative;
+  left: 250px;
+  bottom: 8px;
+  font-size: 13px;
+  font-family: Poppins;
+  font-weight: normal;
+}
+
+.footer .play-back-track-container .play-back-track {
+  height: 4px;
+  width: 30vw;
+  border-radius: 4px;
+  background-color: #c4c4c4;
+}
+
 .footer .sound-and-features {
   height: 55px;
   width: 20vw;
@@ -640,6 +681,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .footer .sound-and-features .sound-control-ftr {
+  position: relative;
   height: 4px;
   width: 100px;
   border-radius: 2px;
@@ -647,7 +689,22 @@ body::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
 }
 
+.footer .sound-and-features .sound-control-thumb {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background-color: #1FD660;
+  right: .4px;
+  bottom: -2px;
+  display: none;
+}
+
 .footer .sound-and-features .sound-control-ftr:hover {
   background-color: #1FD660;
+}
+
+.footer .sound-and-features .sound-control-ftr:hover .sound-control-thumb {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

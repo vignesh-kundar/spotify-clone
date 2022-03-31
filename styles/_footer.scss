@@ -39,6 +39,37 @@
             }
         }
     } //image-and-name-end
+    .play-back-track-container {
+        text-align: center !important;
+        .play-back-track::before {
+            content: "12.5";
+            color: #c4c4c493;
+            margin: 2px;
+            position: relative;
+            right: 250px;
+            bottom: 8px;
+            font-size: 13px;
+            font-family: Poppins;
+            font-weight: normal;
+        }
+        .play-back-track::after {
+            content: "12.5";
+            color: #c4c4c493;
+            margin: 2px;
+            position: relative;
+            left: 250px;
+            bottom: 8px;
+            font-size: 13px;
+            font-family: Poppins;
+            font-weight: normal;
+        }
+        .play-back-track {
+            height: 4px;
+            width: 30vw;
+            border-radius: 4px;
+            background-color: #c4c4c4;
+        }
+    }
     .sound-and-features {
         height: 55px;
         width: 20vw;
@@ -48,14 +79,29 @@
         // background-color: blue;
         margin-right: 20px;
         .sound-control-ftr {
+            position: relative;
             height: 4px;
             width: 100px;
             border-radius: 2px;
             background-color: gray;
             cursor: pointer;
         }
+        .sound-control-thumb {
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 100%;
+            background-color: #1FD660;
+            right: .4px;
+            bottom: -2px;
+            display: none;
+        }
         .sound-control-ftr:hover {
             background-color: #1FD660;
+            .sound-control-thumb {
+                display: block;
+            }
         }
     }
 } //footer-end
+//range finder
